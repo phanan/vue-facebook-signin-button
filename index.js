@@ -3,7 +3,7 @@
     Vue.component('fb-signin-button', {
       name: 'fb-signin-button',
       render (createElement) {
-        return createElement('div', {
+        return createElement('button', {
           attrs: {
             class: 'fb-signin-button'
           },
@@ -32,7 +32,7 @@
   if (typeof exports === 'object') {
     module.exports = install
   } else if (typeof define === 'function' && define.amd) {
-    /*global define*/
+    /* global define */
     define([], function () { return install })
   } else if (window.Vue) {
     window.Vue.use(install)
