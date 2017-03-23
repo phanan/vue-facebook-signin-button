@@ -17,7 +17,7 @@ or, if you're not in a modular environment, just include it as a `<script>`.
 ## Usage
 
 > Important: The Facebook SDK must first be loaded asynchronously for the plugin to work. Something like this will do:
-> ```js
+```js
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '{your-app-id}',
