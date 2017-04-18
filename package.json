@@ -27,7 +27,7 @@
   ],
   "author": "Phan An <me@phanan.net>",
   "license": "MIT",
-  "repo": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/phanan/vue-facebook-signin-button/"
   },
