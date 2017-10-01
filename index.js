@@ -3,9 +3,10 @@
     Vue.component('fb-signin-button', {
       name: 'fb-signin-button',
       render (createElement) {
-        return createElement('div', {
+        return createElement('button', {
           attrs: {
-            class: 'fb-signin-button'
+            class: 'fb-signin-button',
+            role: 'button'
           },
           ref: 'signinBtn'
         }, this.$slots.default)
