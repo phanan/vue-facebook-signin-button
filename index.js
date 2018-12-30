@@ -3,7 +3,7 @@
     Vue.component('fb-signin-button', {
       name: 'fb-signin-button',
       render (createElement) {
-        return createElement('div', {
+        return createElement('button', {
           attrs: {
             class: 'fb-signin-button'
           },
@@ -23,6 +23,7 @@
         this.$refs.signinBtn.addEventListener('click', e => {
           window.FB.login(response => {
             this.$emit(response.authResponse ? 'success' : 'error', response)
+            this.$emit('click', e)
           }, this.params)
         })
       }
