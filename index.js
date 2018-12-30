@@ -21,9 +21,9 @@
       },
       mounted () {
         this.$refs.signinBtn.addEventListener('click', e => {
+          this.$emit('click', e)
           window.FB.login(response => {
             this.$emit(response.authResponse ? 'success' : 'error', response)
-            this.$emit('click', e)
           }, this.params)
         })
       }
